@@ -1,0 +1,133 @@
+header {
+    background-color: $bg-w;
+    padding-bottom: 20px;
+  
+    section.nav-bar {
+      width: 100%;
+      position: fixed;
+      top: 0px;
+      background-color: $bg-w;
+  
+      div.container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid lightgrey;
+  
+        img {
+          margin: 20px 0;
+          height: 30px;
+        }
+  
+        ul.large {
+          display: flex;
+          flex-direction: row;
+  
+  
+          li {
+            margin-left: 10px;
+          }
+        }
+  
+        div.small {
+          display: none;
+        }
+      }
+    }
+  
+    section.jumbotron {
+      display: flex;
+      flex-direction: row;
+      margin-top: 71px;
+  
+      section {
+        width: 50%;
+      }
+  
+      section.left {
+  
+        h1 {
+          margin: 40px 0 20px 0;
+        }
+  
+        div {
+          display: flex;
+          flex-direction: row;
+          margin-top: 10px;
+  
+          button {
+            margin-right: 5px;
+          }
+        }
+      }
+  
+      section.right {
+  
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 799px) {
+    header {
+  
+      section.nav-bar {
+  
+        div.container {
+  
+          ul.large {
+            display: none;
+          }
+  
+          div.small {
+            display: inline-block;
+            position: relative;
+  
+            i {
+              cursor: pointer;
+            }
+  
+            div.card {
+              display: none;
+              background-color: $bg-p;
+              width: 100px;
+              position: absolute;
+              top: 20px;
+              right: 0;
+              padding: 10px 5px;
+              border-radius: 5px;
+  
+              li {
+                margin-bottom: 10px;
+                font-size: 12px;
+  
+                a {
+                  color: $bg-w;
+                }
+              }
+  
+              li:hover {
+                font-weight: 600;
+              }
+            }
+  
+            div.card.active {
+              display: block;
+            }
+          }
+        }
+      }
+  
+      section.jumbotron {
+        flex-direction: column;
+  
+        section {
+          width: 100%;
+        }
+      }
+    }
+  }
+  

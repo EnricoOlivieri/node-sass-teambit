@@ -1,5 +1,388 @@
-body {
-  font: 100% Helvetica, sans-serif;
-  color: #333;
+main section.rabbits {
+  background-color: #3E14E9;
+  color: #FFFFFF;
+  padding: 30px;
+  text-align: center;
+}
+
+main section.rabbits section.top-or-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+main section.rabbits section.top-or-bottom h2 {
+  margin-bottom: 20px;
+}
+
+main section.rabbits section.top-or-bottom section.squares {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+main section.rabbits section.top-or-bottom section.squares div.square {
+  width: calc(100% / 3);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main section.rabbits section.top-or-bottom section.squares div.square img {
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+main section.rabbits section.top-or-bottom section.squares div.square span {
+  font-size: 10px;
+}
+
+main section.rabbits section.top-or-bottom section.rabbit {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+main section.rabbits section.top-or-bottom section.rabbit img {
+  height: 200px;
+}
+
+main section.rabbits div.line {
+  margin: 30px 0;
+  border-top: 0.3px solid lightgrey;
+}
+
+main section.rabbits h2.here {
+  margin-top: 50px;
+}
+
+main section.animals {
+  background-color: #FFFFFF;
+  padding: 25px;
+}
+
+main section.animals section.normal-or-reverse {
+  padding: 10px 0;
+  display: flex;
+  width: 100%;
+}
+
+main section.animals section.normal-or-reverse div.big {
+  width: 50%;
+}
+
+main section.animals section.normal-or-reverse div.only-img img {
+  width: 100%;
+}
+
+main section.animals section.normal-or-reverse div.not-only-img {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+main section.animals section.normal-or-reverse div.not-only-img div.sub-not-only-img {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+main section.animals section.normal-or-reverse div.not-only-img div.sub-not-only-img h2 {
+  margin-bottom: 30px;
+}
+
+main section.animals section.normal-or-reverse div.not-only-img div.sub-not-only-img p {
+  margin-bottom: 20px;
+}
+
+main section.animals section.normal-or-reverse div.not-only-img div.sub-not-only-img a {
+  font-size: 10px;
+}
+
+main section.animals section.normal-or-reverse div.not-only-img div.sub-not-only-img img {
+  margin-top: 20px;
+  width: 80%;
+}
+
+main section.animals section.normal {
+  flex-direction: row;
+}
+
+main section.animals section.reverse {
+  flex-direction: row-reverse;
+}
+
+main section.animals section.reverse div.not-only-img {
+  justify-content: flex-end;
+}
+
+main section.see {
+  background-color: #3E14E9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+main section.see h1 {
+  line-height: 50px;
+  margin-bottom: 30px;
+  color: #FFFFFF;
+}
+
+main section.see h1 img {
+  height: 25px;
+}
+
+main section.see div.card {
+  background-color: #FFFFFF;
+  width: 50%;
+  border-radius: 10px;
+  border: 0.3px solid lightgrey;
+  margin-bottom: 30px;
+  padding: 25px;
+}
+
+main section.see div.card div.text {
+  margin-bottom: 30px;
+}
+
+main section.see div.card div.images img {
+  height: 30px;
+}
+
+main section.see div.but {
+  display: flex;
+  flex-direction: row;
+}
+
+main section.see div.but button {
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 799px) {
+  main section.rabbits section.top-or-bottom section.squares {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 624px) {
+  main section.animals section.normal-or-reverse div.big.not-only-img {
+    width: 100%;
+  }
+
+  main section.animals section.normal-or-reverse div.big.not-only-img div.sub-not-only-img {
+    width: 100%;
+  }
+
+  main section.animals section.normal-or-reverse div.only-img {
+    display: none;
+  }
+
+  main section.see h1 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  main section.see div.card {
+    padding: 10px;
+    width: 90%;
+  }
+
+  main section.see div.card span {
+    font-size: 10px;
+  }
+}
+
+footer {
+  background-color: #FFFFFF;
+}
+
+footer div.container {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 0;
+}
+
+footer div.container section.left {
+  width: 25%;
+  padding-right: 60px;
+  display: flex;
+  flex-direction: row;
+}
+
+footer div.container section.left img {
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+footer div.container section.left h6 {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+footer div.container section.right {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+}
+
+footer div.container section.right div {
+  width: calc(100% / 5);
+}
+
+footer div.container section.right div h3 {
+  margin-bottom: 20px;
+}
+
+footer div.container section.right div ul li {
+  margin-bottom: 10px;
+}
+
+footer div.container section.right div ul li a {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+@media screen and (max-width: 799px) {
+  footer div.container section.left {
+    display: none;
+  }
+
+  footer div.container section.right {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 624px) {
+  footer div.container section.right {
+    flex-wrap: wrap;
+  }
+
+  footer div.container section.right div {
+    width: calc(100% / 2);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+header {
+  background-color: #FFFFFF;
+  padding-bottom: 20px;
+}
+
+header section.nav-bar {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  background-color: #FFFFFF;
+}
+
+header section.nav-bar div.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgrey;
+}
+
+header section.nav-bar div.container img {
+  margin: 20px 0;
+  height: 30px;
+}
+
+header section.nav-bar div.container ul.large {
+  display: flex;
+  flex-direction: row;
+}
+
+header section.nav-bar div.container ul.large li {
+  margin-left: 10px;
+}
+
+header section.nav-bar div.container div.small {
+  display: none;
+}
+
+header section.jumbotron {
+  display: flex;
+  flex-direction: row;
+  margin-top: 71px;
+}
+
+header section.jumbotron section {
+  width: 50%;
+}
+
+header section.jumbotron section.left h1 {
+  margin: 40px 0 20px 0;
+}
+
+header section.jumbotron section.left div {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+header section.jumbotron section.left div button {
+  margin-right: 5px;
+}
+
+header section.jumbotron section.right img {
+  width: 100%;
+}
+
+@media screen and (max-width: 799px) {
+  header section.nav-bar div.container ul.large {
+    display: none;
+  }
+
+  header section.nav-bar div.container div.small {
+    display: inline-block;
+    position: relative;
+  }
+
+  header section.nav-bar div.container div.small i {
+    cursor: pointer;
+  }
+
+  header section.nav-bar div.container div.small div.card {
+    display: none;
+    background-color: #3E14E9;
+    width: 100px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    padding: 10px 5px;
+    border-radius: 5px;
+  }
+
+  header section.nav-bar div.container div.small div.card li {
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+
+  header section.nav-bar div.container div.small div.card li a {
+    color: #FFFFFF;
+  }
+
+  header section.nav-bar div.container div.small div.card li:hover {
+    font-weight: 600;
+  }
+
+  header section.nav-bar div.container div.small div.card.active {
+    display: block;
+  }
+
+  header section.jumbotron {
+    flex-direction: column;
+  }
+
+  header section.jumbotron section {
+    width: 100%;
+  }
 }
 

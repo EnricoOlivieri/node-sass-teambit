@@ -16,5 +16,13 @@
     "vue-template-compiler": "^2.6.12"
   },
   "dependencies": {},
-  "keywords": []
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EnricoOlivieri/node-sass-teambit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EnricoOlivieri/node-sass-teambit/issues"
+  },
+  "homepage": "https://github.com/EnricoOlivieri/node-sass-teambit#readme"
 }
